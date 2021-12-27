@@ -20,6 +20,8 @@ a:hover {
 .app {
   display: flex;
   overflow: hidden;
+
+  position: relative;
 }
 
 .navbar {
@@ -29,8 +31,7 @@ a:hover {
 
 .main {
   flex: 0.8;
-  width: 100%;
-
+  text-align: center;
 }
 
 .routes {
