@@ -40,6 +40,24 @@ const CryptoDetails = () => {
                 <Title level={2} className="coin-name">
                     {cryptoDetails.name} ({cryptoDetails.slug}) Price
                 </Title>
+                <p>{cryptoDetails.name} live price in US dollars.</p>
+            </Col>
+            <Select
+                defaultValue='7d'
+                className='select-timeperiod'
+                placeholder='Select time period'
+                onChange={(value) => setTimePeriod(value)}
+            >
+                {time.map((date) => <Option key={date}>{date}</Option>)}
+            </Select>
+            <Col className="stats-container">
+                <Col className="coin-value-statistics">
+                    <Col className="coin-value-statistics-heading">
+                        <Title level={3} className="coin-detailes-heading">
+                            {cryptoDetails.name} Value Statistics
+                        </Title>
+                    </Col>
+                </Col>
             </Col>
         </Col>
     )
