@@ -21,7 +21,7 @@ function App() {
                   <Route exact path='/' element={<Homepage />}></Route>
                   <Route exact path='/exchanges' element={<Exchanges />}></Route>
                   <Route exact path='/cryptocurrencies' element={<Cryptocurrencies />}></Route>
-                  <Route exact path='/cripto/:coinId' element={<CryptoDetails />}></Route>
+                  <Route exact path='/crypto/:coinId' element={<CryptoDetails />}></Route>
                   <Route exact path='/news' element={<News />}></Route>
                 </Routes>
             </div>
