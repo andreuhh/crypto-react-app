@@ -17,11 +17,11 @@ a:hover {
   color: var(--pink) !important;
 }
 
-.app {
+.appContainer {
   display: flex;
   overflow: hidden;
-
   position: relative;
+  background: #f0f2f5;
 }
 
 .navbar {
@@ -102,6 +102,10 @@ a:hover {
   .app {
     flex-direction: column;
     overflow: hidden;
+  }
+
+  .appContainer {
+    display: block;
   }
 
   .navbar {

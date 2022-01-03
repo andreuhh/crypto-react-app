@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <div className='appContainer'>
         <div className='navbar'>
           <Navbar />
         </div>
@@ -38,6 +39,7 @@ function App() {
             </Space>
           </div>
         </div>
+      </div>
       </BrowserRouter>
 
     </div>
